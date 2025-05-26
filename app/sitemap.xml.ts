@@ -1,6 +1,7 @@
+import { metainfo } from '@/lib/config';
 import { GetServerSideProps } from 'next';
 
-const BASE_URL = 'https://rantai.app'; // Replace with your actual domain
+const BASE_URL =  metainfo.url; // Replace with your actual domain
 
 interface Rant {
     id: string | number;

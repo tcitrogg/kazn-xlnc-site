@@ -33,10 +33,10 @@ export default function HeaderBoard() {
   }
 
   return (
-    <section className="w-full px-7 py-5">
+    <section className="w-full p-4 md:px-7 md:py-5">
       <motion.section
         ref={ref}
-        style={{ scale }} className="w-11/12 mx-auto h-[90vh] rounded-[2.5rem] bg-neutral-200 relative p7 overflow-hidden">
+        style={{ scale }} className="w-full md:w-11/12 mx-auto h-[90vh] rounded-[2.5rem] bg-neutral-200 relative p7 overflow-hidden">
         {/* N24SPfeCUHbVQHqJCGKSZd */}
         <video
           ref={videoRef}
@@ -45,7 +45,7 @@ export default function HeaderBoard() {
           muted
           playsInline
           autoPlay
-          className="w-full absolute -top-9/12 object-cover"
+          className="w-full absolute lg:-top-9/12 object-cover"
         />
 
         {/* button to pause and play video */}
